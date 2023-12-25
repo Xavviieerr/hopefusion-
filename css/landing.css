@@ -1,0 +1,1085 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color:#ffffff;
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+section{
+    height: 100vh;
+    width:100vw;
+}
+.hero{
+    background-color: #0C6051;
+}
+.nav-bar{
+    display:flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    padding: 0px 9%;
+}
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    color:#D49451;
+}
+.quick-links{
+    width:800px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.quick-links >span{
+    display: flex;
+}
+.burger-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+.quick-links > span > li > a{
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 23px;
+    cursor: pointer;
+}
+.quick-links> span > li > a:hover{
+    color:#D49451;
+}
+.signup-btn, .login-btn{
+    color: #D49451;
+    border:none;
+    height: 40px;
+    width: 101px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    outline:none;
+    border:2px solid #D49451;
+    background-color: #0C6051;
+    margin-left: 5%;
+}
+.signup-btn:hover, .login-btn:hover{
+    background-color: #D49451;
+    color:#1D0B35;
+}
+.hero-body{
+    display:flex;
+}
+.text{
+    width: 38%;
+    margin-left: 13%;
+    margin-top: 8%;
+    height: 480px;
+}
+.circle{
+    margin-top: 8%;
+    height: 480px;
+    width: 38%;
+}
+.hero-main{
+    font-size: 41px;
+    width: 380px;
+    margin-bottom: 6%;
+}
+.hero-sub{
+    letter-spacing: 2px;
+    line-height:23px;
+    color:#D49451;
+}
+.hover-circle{
+    height:260px;
+    width:260px;
+    position:absolute;
+    top:100px;
+    right: 100px;
+    border-radius: 260px;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    background-color: #0C6051;
+}
+.hover-line{
+    height:210px;
+    width:210px;
+    border-radius: 210px;
+    overflow: hidden;
+}
+.hover-line > img{
+    height:210px;
+    width:210px;
+    border-radius: 210px;
+}
+.hoverback{
+    height:220px;
+    width:220px;
+    border-radius: 220px;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    background-color: #D49451;
+}
+.hero-donation-btn{
+    width:180px;
+    height: 57px;
+    background-color: #D49451;
+    outline:none;
+    border:none;
+    margin-top: 6%;
+    font-size: 20px;
+    color:#1D0B35;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+.hero-donation-btn:hover{
+    background-color: #0C6051;
+    color:#D49451;
+    border: 2px solid #D49451;
+}
+.background-circle{
+    height:480px;
+    width:480px;
+    border-radius: 480px;
+    background-color: #F2C787;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6%;
+}
+.background-sub{
+    height:410px;
+    width:410px;
+    border-radius: 410px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+.background-main{
+    height:370px;
+    width:370px;
+    border-radius: 370px;
+    overflow: hidden;
+    background-color: black;
+
+}
+.epicenter{
+    height:100%;
+    width:100%;
+}
+.flap{
+    background-color: #0C6051;
+    height: 80px;
+    width: 100vw;
+}
+
+
+/*//////////////////////*/
+/* about code */
+/*//////////////////////*/
+.about{
+    background-color: #FAF8F4;
+    display: flex;
+    align-items: center;
+}
+.about-circle{
+    margin-left: 10%;
+    height: 560px;
+    width:540px;
+}   
+.about-text{
+    height: 490px;
+    width:540px;
+    
+}
+.about-logo{
+    color: #CC3D39;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 3%;
+}
+.about-text > h2{
+    color: #1C083F;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+.about-sub{
+    color:#807594;
+    letter-spacing: 1px;
+    line-height:25px;
+    margin-bottom: 6%;
+}
+.about-btn{
+    height: 50px;
+    width:190px;
+    color:#1D0B35;
+    background-color: #F2C787;
+    border-radius: 7px;
+    border:none;
+    font-size: 25px;
+    transition-duration: 0.4s;
+}
+.about-btn:hover{
+    background-color:#ffffff;
+    border: 2px solid #D49451
+}
+.about-big-circle{
+    height: 500px;
+    width:500px;
+    border-radius: 500px;
+    background-image: linear-gradient(#2f8878, white, #277a6b);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-inner-circle{
+    height: 474px;
+    width:474px;
+    border-radius: 474px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-top: 4%;
+}
+.about-inner-circle > img {
+    height:100%;
+    width:100%;
+}
+
+
+/*//////////////////////*/
+/* services code */
+/*//////////////////////*/
+.services{
+    background-color: #ffffff;
+}
+.header{
+    margin-top: 3%;
+    color:#CC3D39;
+    font-size: 23px;
+    margin-left: 45%;
+}
+.service-intro{
+    margin-left: 33%;
+}
+.service-intro > h2{
+    color:#1D0B35;
+    font-size: 40px;
+    width:490px;
+
+}
+.card-container{
+    height:490px;
+    margin-top: 2%;
+    margin-left: 16%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.card-1{
+    border:2px solid #629A90;
+    height: 220px;
+    width: 280px;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 7px;
+    text-align: center;
+}
+.card-1 > img{
+    height: 65px;
+    width: 65px;
+    margin-bottom: 4%;
+}
+.card-1 > h3{
+    color:#1D0B35;
+    margin-bottom: 4%;
+}
+.card-1 > p{
+    color:#6F6286;
+    font-size: 14px;
+}
+
+
+/*//////////////////////*/
+/* donate code */
+/*//////////////////////*/
+.donate-container{
+    display:flex;
+    align-items: center;
+    padding-left: 7%;
+    margin-top: 4%;
+}
+.donate-circle{
+    margin-left: 10%;
+    height: 560px;
+    width:540px;
+}  
+/*//////////////////////*/
+/* recieve code */
+/*//////////////////////*/
+.recieve{
+    display:flex;
+    align-items: center;
+    padding-left: 9%;
+    background-color: #FFFFFF;
+}
+.recieve-img, .right-text, .left-img{
+    height: 100%;
+    width:100%;
+}
+.recieve-container{
+    height: 70%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+.left-img{
+    width:88%;
+    height:100%;
+    overflow: hidden;
+}
+.right-text{
+    height: 75%;
+    width: 75%;
+    margin-left: 9%;
+    overflow: hidden;
+}
+
+.recieve-btn{
+    width:200px;
+    height: 57px;
+    background-color: #D49451;
+    outline:none;
+    border:none;
+    font-size: 20px;
+    color:#1D0B35;
+    transition-duration: 0.4s;
+}
+.recieve-btn:hover{
+    border:2px solid #D49451;
+    background-color: #ffffff;
+}
+.top-t{
+    height:30px;
+    width: 120px;
+    background-color: #f3f3f3;
+    padding-top: 3px;
+   
+}
+.top-t > h3
+{
+    width: 260px;
+    color: #CC3D39;
+}
+.recieve-bolder{
+    font-size: 35px;
+    color:#1D0B35;
+    margin-bottom: 3%;
+}
+.recieve-sub{
+    color: #807594;
+    font-size: 21px;
+    margin-bottom: 6%;
+}
+
+
+
+/*//////////////////////*/
+/* footer code */
+/*//////////////////////*/
+.footer{
+    height:400px;
+    width:100vw;
+    background-color: #0C6051;
+    display:flex;
+    
+}
+.footer-logo{
+ font-size: 32px;
+}
+.footer-main-text{
+    line-height: 34px;
+}
+.first-info{
+    width: 320px;
+    height: 220px;
+    margin-left: 11%;
+    margin-top: 7%;
+}
+.second-info{
+    width: 620px;
+    height: 200px;
+    display: flex;
+    margin-top: 7%;
+}
+.second-info > .sections{
+    line-height: 34px;
+    margin-left: 4%;
+}
+
+.quicker:hover{
+  color:#F2C787;
+  cursor:pointer;
+}
+.extra{
+    background-color: #0C6051;
+    height:44px;
+    margin-top: 1px;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+.newsletter{
+    height: 240px;
+    width: 210px;
+    background-color: #ffffff;
+    border-radius: 11px;
+    margin-top: 7%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter > h3{
+    margin-top: 29px;
+    color:#0C6051;
+}
+.newsletter > span{
+    color:#0C6051;
+}
+.newsletter-input{
+    margin-top: 13px;
+   height: 30px;
+   width:90%;
+   border: 1px solid #0C6051;
+   border-radius: 4px;
+   color: #0C6051;
+   padding-left: 5px;
+}
+.newsletter-btn{
+    margin-top: 23px;
+    height: 50px;
+    width:150px;
+    border-radius: 9px;
+    background-color: #D49451;
+    border: none;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color:#D49451;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  #myBtn > img{
+    height:34px;
+    width:34px;
+  }
+
+  .modal{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    overflow-y: scroll;
+  }
+  
+  /* Modal Content/Box */
+  .login-modal-content, .signup-modal-content{
+    color: black;
+    background-color: #fefefe;
+    margin: 12% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 51%;
+    height: 500px;
+    border-radius: 50px;
+  }
+  .organization-modal-content{
+    color: black;
+    background-color: #fefefe;
+    margin: 12% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 51%;
+    height: 500px;
+    border-radius: 50px;
+  }
+  
+  /* The Close Button */
+  .login-close, .signup-close, .organization-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .login-close:hover, .signup-close:hover,
+  .login-close:focus, .signup-close:focus,
+  .organization-close:hover, .organization-close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .login-container, .signup-container, .organization-container{
+    display:flex;
+    justify-content: space-around;
+  }
+  .login-main-form{
+    height: 50%;
+    margin-top: 16%;
+    margin-bottom: 3%;
+  }
+  .organization-main-form{
+    height: auto;
+    margin-top: 16%;
+    margin-bottom: 3%;
+    width: 300px;
+  }
+  .signup-main-form{
+    height: 80%;
+    margin-top: 16%;
+    margin-bottom: 3%;
+  }
+  .login-main-form > p, .signup-main-form > p, .organization-main-form > p{
+    color:#0C6051;
+    margin-bottom: 5%;
+    font-weight:550;
+  }
+  .login-main-form> input, .signup-main-form> input, .organization-main-form > input{
+    margin-bottom: 5%;
+    height: 25px;
+    color:#0C6051;
+    padding-left: 4px;
+  }
+  .actual-btn, .signup-actual-btn, .organization-actual-btn{
+    height: 80px;
+    width: 171px;
+    border-radius: 18px;
+    padding: 8px 22%;
+    border:2px solid #D49451;
+    background-color: #0C6051;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .left-img{
+    height:93%; 
+    width: 45%;
+  }
+  .actual-btn:hover, .signup-actual-btn:hover, .organization-actual-btn:hover{
+    margin-top: 3%;
+    background-color: #D49451;  
+    color: #0C6051;
+  }
+  .p-zero, .p-one, .p-two, .p-three{
+    font-size: 12px;
+  }
+
+  .organization-error{
+    color: red;
+  }
+
+  /* media queries */
+  @media only screen and (min-width: 481px) and (max-width: 991px) {
+    .quick-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 60%;
+        margin-left: 18%;
+        background-color: #333;
+        padding: 10px;
+    }
+    .quick-links.show {
+        display: flex;
+        height:310px;
+        background-color: #F2C787;
+    }
+    .quick-links > .quick-link{
+        display: block;
+    }
+    .quick-links > .quick-link > li{
+        height: 40px;
+        width: 250px;
+        border-bottom: 2px solid #0C6051;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .hover-circle{
+        display: none;
+    }
+    .text{
+        width: 380px;
+        margin-left: 9%;
+        margin-top: 11%;
+        height: 380px;
+    }
+    .circle{
+        margin-top: 11%;
+        height: 480px;
+        width: 38%;
+    }
+    .hero-main{
+        font-size: 25px;
+        width: 250px;
+        height: 200px;
+        margin-bottom: 0%;
+    }
+    .background-circle{
+        width: 320px;
+        height: 320px;
+        border-radius: 320px;
+        margin-top: 10%;
+    }
+    .background-sub{
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+    }
+    .background-main{
+        width: 290px;
+        height: 290px;
+        border-radius: 290px;
+    }
+    .epicenter{
+        width: 290px;
+        height: 290px;
+        border-radius: 290px;
+    }
+    .hero-donation-btn{
+        height: 40px;
+    }
+    .hero-sub{
+        letter-spacing: 1px;
+        line-height:20px;
+        color:#D49451;
+        overflow: hidden;
+    }
+    .circle{
+        height: 420px;
+        width: 400px;
+        margin-right: 11%;
+        margin-left: 2%;
+    }
+    .about-circle{
+        margin-left: 5%;
+        height: 370px;
+        width:340px;
+    }   
+    .about-text{
+        width: 340px;
+        margin-left: 9%;
+    }
+    .about-logo{
+        color: #CC3D39;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+    .about-text > h2{
+        color: #1C083F;
+        font-weight: bolder;
+        font-size: 28px;
+        margin-bottom: 5%;
+    }
+    .about-sub{
+        color:#807594;
+        letter-spacing: 1px;
+        line-height:17px;
+        margin-bottom: 6%;
+        overflow: hidden;
+    }
+    .about-btn{
+        height: 45px;
+        width:150px;
+    }
+    .about-big-circle{
+        height: 330px;
+        width:330px;
+        border-radius: 330px;   
+    }
+    .about-inner-circle{
+        height: 315px;
+        width:315px;
+        border-radius: 315px;
+    }
+    .card-container{
+        grid-template-columns: auto auto auto;
+    }
+    .card-1{
+        height: 190px;
+        width: 150px;
+    }
+    .services{
+        background-color: #ffffff;
+    }
+    .header{
+        font-size: 18px;
+        margin-left: 45%;
+    }
+    .service-intro{
+        margin-left: 22%;
+    }
+    .service-intro > h2{
+        color:#1D0B35;
+        font-size: 29px;
+        width:490px;
+    
+    }
+    
+    .card-1 > img{
+        height: 40px;
+        width: 40px;
+        margin-bottom: 4%;
+    }
+    .card-1 > h3{
+        color:#1D0B35;
+        margin-bottom: 4%;
+    }
+    .card-1 > p{
+        color:#6F6286;
+        font-size:9px;
+    }
+    .donate-circle{
+        margin-left: 1%;
+    } 
+    .about-big-circle{
+        margin-top: 23%;
+    }
+    .flap{
+        height: 50px;
+
+    }
+    .left-img{
+        height:340px;
+        border-radius: 50px;
+    }
+    .recieve-bolder{
+        font-size: 25px;
+    }
+    .reciever-main{
+        text-decoration: none;
+        height: 170px;
+        width: 190px;
+        border-radius: 11px;
+        color: #D49451;
+        border: 2px solid #D49451;
+    }
+    .footer{
+        height:300px;
+    }
+    .left-img{
+        display: none;
+    }
+    .login-modal-content{
+        height: 380px;
+        width: 350px;
+        overflow: hidden;
+        background-color: #FAF8F4;
+    }
+    .login-main-form{
+        height: 180px;
+        width: 260px;
+    }
+    .login-main-form > input{
+        width: 100%;
+    }
+    .login-close{
+        margin-top: 21%;
+    }
+    .signup-modal-content{
+        height: auto;
+        width: 300px;
+    }
+    .actual-btn, .signup-actual-btn, .organization-actual-btn{
+        width: 50px;
+        padding: 8px 50px;
+      }
+    .signup-main-form{
+        height: 300px;
+        width: 250px;
+    }
+    .signup-main-form > input{
+        width: 100%;
+    }
+  }
+
+  /* Smartphone styles */
+@media only screen and (max-width: 480px) {
+    .logo{
+        font-size: 21px;
+    }
+    .hero{
+        height: 630px;
+    }
+    .hover-circle{
+        display: none;
+    }
+    .hero-body{
+        background-image: url('../images/simon-reza-jQhgDnovqhw-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .text{
+        width: 360px;
+        margin-left: 7%;
+        margin-top: 19%;
+    }
+    .circle{
+        display: none;
+    }
+    .hero-main{
+        font-size: 27px;
+        width: 270px;
+        height: 200px;
+        margin-bottom: 0%;
+    }
+    .hero-donation-btn{
+        height: 40px;
+        width:160px;
+    }
+    .quick-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 60%;
+        margin-left: 18%;
+        background-color: #333;
+        padding: 10px;
+    
+    }
+    .quick-links.show {
+        display: flex;
+        height:310px;
+        background-color: #F2C787;
+        margin-top: 2%;
+    }
+    .quick-links > .quick-link{
+        display: block;
+    }
+    .quick-links > .quick-link > li{
+        height: 40px;
+        width: 250px;
+        border-bottom: 2px solid #0C6051;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .about{
+        display: block;
+        height: auto;
+    }
+    .about-text{
+        width: 270px;
+        margin-left: 11%;
+        height: auto;
+    }
+    .about-logo{
+        color: #CC3D39;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+    .about-text > h2{
+        color: #1C083F;
+        font-weight: bolder;
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
+    .about-sub{
+        color:#807594;
+        letter-spacing: 1px;
+        line-height:15px;
+        margin-bottom: 6%;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    .about-btn{
+        height: 40px;
+        width:90px;
+        font-size: 15px;
+    }
+    .about-circle{
+        margin-left: 12%;
+        margin-top: 5%;
+        height: 290px;
+        width:290px;
+        border-radius: 290;
+    }   
+    .about-big-circle{
+        height: 270px;
+        width:270px;
+        border-radius: 270px;   
+    }
+    .about-inner-circle{
+        height: 260px;
+        width:260px;
+        border-radius: 260px;
+    }
+    .services{
+        height: auto;
+    }
+    .card-container{
+        grid-template-columns: auto;
+        height: auto;
+    }
+    .card-1{
+        height: 170px;
+        width: 300px;
+    }
+    .card-1 > p{
+        font-size: 10px;
+    }
+    .header{
+        margin-left: 38%;
+        font-size: 17px;
+        margin-top: 19%;
+    }
+    .service-intro{
+        margin-left: 15%;
+    }
+    .service-intro > h2{
+        font-size: 17px;
+        margin-left: 0px;
+        width: 260px;
+        margin-top: 5%;
+    }
+    .donate{
+        height: auto;
+        margin-left: 0px;
+    }
+    .donate-container{
+        display: block;
+        padding-left: 0px;
+    }
+    .about-text{
+        height: 290px;
+        margin-top: 11%;
+        
+    }
+    .donate-circle{
+        height: 300px;
+        width: 340px;
+        margin-left: 0px;
+       
+    }
+    .flap{
+        height: 35px;
+    }
+    .recieve-container{
+        display: block;
+        height: auto;
+    }
+    .left-img{
+        width:100%;
+        height: 260px;
+    }
+    .right-text{
+        margin-top: 7%;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .recieve-bolder{
+        font-size: 19px;
+    }
+    .recieve-sub{
+        font-size: 16px;
+    }
+    .recieve-btn{
+        height: 41px;
+        width: 110px;
+        font-size: 17px;
+    }
+    .footer{
+        display: block;
+        height: auto;
+    }
+    .first-info{
+        margin-left: 2%;
+        height: 110px;
+        width: auto;
+    }
+    .second-info{
+        height: auto;
+        display: block;
+        width: auto;
+    }
+    .sections{
+        width: 180px;
+        margin-top: 5%;
+    }
+    .sections > h3{
+        color: #D49451;
+    }
+    .footer-logo{
+        font-size: 20px;
+    }
+    .extra{
+        height: auto;
+        padding: 2% 3%;
+    }
+    .left-img{
+        display: none;
+    }
+    .login-modal-content{
+        height: 54%;
+        width: 72%;
+        overflow: hidden;
+        background-color: #FAF8F4;
+    }
+    .login-main-form{
+        height: 180px;
+        width: 91%;
+    }
+    .login-main-form > input{
+        width: 100%;
+    }
+    .login-close{
+        margin-top: 18%;
+    }
+    .signup-modal-content{
+        height: auto;
+        width: 88%;
+    }
+    .actual-btn, .signup-actual-btn, .organization-actual-btn{
+        width: 50px;
+        padding: 8px 50px;
+      }
+    .signup-main-form{
+        height: 300px;
+        width: 100%;
+    }
+    .signup-main-form > input{
+        width: 100%;
+    }
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Dashboard</title>
+    <link rel="stylesheet" href="../css/a_dashboard.css">
+    <link rel="stylesheet" href="../css/u_dashboard.css">
+</head>
+<body>
+    <section > 
+        <div class="blur" id="blur"></div>
+        <div class="out">
+            <div class="navigation" id="navigation">
+                <a href="" class="logo">HopeFusion</a>
+                <span onclick="navcloser()" style="display: none;" class="nav-close" id="nav-close">&times;</span>
+                <div class="premium-details">
+                    <div class="premium-image">
+                        <img class="premium-imager" src="../images/wadi-lissa-4U1x6459Q-s-unsplash.jpg" alt="">
+                    </div>
+                    <div class="dummy">
+                        <h4>Change/upload picture</h4>
+                        <!-- <label for="imageUpload">Select an image:</label><br/> -->
+                        <input type="file" class="imageUpload" id="imageuploader" name="image" accept="image/*">
+                        <button class="dummy-btn" id="dummy-btn" onclick=" uploadPpicture()">Upload</button>
+                        <p id="dummy-message" class="dummy-message"></p>
+                    </div> 
+                </div>
+                <div class="nav-top">
+                    <div class="aligner">
+                    <img src="../images/dashboard-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="chart()" class="quick-links">Dashboard</div>
+                    </div>
+                    <div class="aligner">
+                        <img src="../web downloads/facilities.svg" alt="" class="nav-icon"><div onclick="fetchAndDisplayOurOrganizations()" class="quick-links">All Organizations</div>
+                    </div>
+                    <div class="aligner">
+                        <img src="../images/money-donation-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="yourDonation()" class="quick-links">Your Donations</div>
+                    </div>
+                    <div class="aligner">
+                    <img src="../web downloads/users-svgrepo-com.svg" alt="" class="nav-icon"><div  onclick="DisplayUserProfile();" class="quick-links">Profile</div>
+                    </div>
+                    <div class="aligner">
+                    <img src="../images/logout-2-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="logout()" class="quick-links">Log out</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-top">
+                    <div id="hamburger" onclick="displaynav()" class="hamburger">&#9776;</div>
+                    <p class="user-logo"> User Dashboard</p>
+                    <div class="name-case">
+                        <img class="name-image" src="../images/simon-reza-jQhgDnovqhw-unsplash.jpg" alt="">
+                        <span class="name" id="headings-name">User</span>
+                    </div>
+                </div>
+                <div class="head-displayer">
+                   
+                    <div class="total-organizations">
+                        <span class="card-tag">Total Organizations</span>
+                        <div class="shower">
+                            <span class="number" id="display-total-organization">1000</span>
+                            <span class="icon">
+                                <img src="../web downloads/facilities.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="displayer">
+
+                    <!-- main display -->
+                    <div id="user-head"></div>
+                    <div id="displayer-main" class="displayer-main">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+     <!-- signup modal -->
+     <div id="maked-Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="maked-modal-content">
+          <span class="maked-close">&times;</span>
+         <div class="maked-container" style="height : 400px; width: 100%">
+            <div class="maked-form">
+                <h2 style="color:#0C6051; font-size: 30px; margin-left: 24%;">Make Donation</h2>
+                <form class="maked-main-form">
+                    <p>Donation type</p>
+                    <input type="text" id="donation-type">
+                    <p>Ammount</p>
+                    <input type="text" id="ammount">
+                    <p>Item Name</p>
+                    <input type="text" id="item-name"><br>
+                    <p>Description</p>
+                    <textarea id="description" name="" id="" cols="40" rows="10"></textarea><br>
+                    <p>Organization</p>
+                    <input type="text" id="campaign-name" style="margin-bottom: 10%;"><br>
+                    <span onclick="" id="maked-actual-btn" class="maked-actual-btn">Make Donation!</span>
+                </form>
+                
+            </div>
+         </div>
+        </div>
+      </div> 
+    <script src="../js/user-dash.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

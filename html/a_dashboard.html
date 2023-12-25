@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Dashboard</title>
+    <link rel="stylesheet" href="../css/a_dashboard.css">
+</head>
+<body>
+    <section > 
+        <div class="blur" id="blur"></div>
+        <div class="out">
+            <div id="navigation" class="navigation">
+                <a href="" class="logo">HopeFusion</a>
+                <span onclick="navcloser()" style="display: none;" class="nav-close" id="nav-close">&times;</span>
+                <div class="premium-details">
+                    <div class="premium-image">
+                        <img id="premium-imager" class="premium-imager" src="../images/wadi-lissa-4U1x6459Q-s-unsplash.jpg" alt="">
+                    </div>
+                    <div class="dummy">
+                        <h4>Change/upload picture</h4>
+                        <!-- <label for="imageUpload">Select an image:</label><br/> -->
+                        <input type="file" class="imageUpload" id="imageuploader" name="image" accept="image/*">
+                        <button class="dummy-btn" id="dummy-btn" onclick=" uploadPpicture()">Upload</button>
+                        <p id="dummy-message" style="color: red; " class="dummy-message"></p>
+                    </div> 
+                </div>
+                <div class="nav-top">
+                    <div class="aligner">
+                    <img src="../images/dashboard-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="chart()" class="quick-links">Dashboard</div>
+                    </div>
+                    
+                    <div class="aligner">
+                    <img src="../web downloads/users-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="fetchAndDisplayAllUsers()" class="quick-links">All users</div>
+                    </div>
+                    <div class="aligner">
+                    <img src="../images/money-donation-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="fetchAndDisplayAllDonations()" class="quick-links">All Donations</div>
+                    </div>
+                    <div class="aligner">
+                        <img src="../web downloads/facilities.svg" alt="" class="nav-icon"><div onclick="fetchAndDisplayAllOrganizations()" class="quick-links">All Organizations</div>
+                    </div>
+                    <div class="aligner">
+                    <img src="../web downloads/users-svgrepo-com.svg" alt="" class="nav-icon"><div  onclick="DisplayUserProfile();" class="quick-links">Profile</div>
+                    </div>
+                    <div class="aligner">
+                    <img src="../images/logout-2-svgrepo-com.svg" alt="" class="nav-icon"><div onclick="logout()" class="quick-links">Log out</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="main">
+                <div class="main-top">
+                    <div id="hamburger" onclick="displaynav()" class="hamburger">&#9776;</div>
+                    <p class="user-logo"> Admin Dashboard</p>
+                    <div class="name-case">
+                        <img id="name-image" class="name-image" src="../images/dashboard-svgrepo-com.svg" alt="">
+                        <span class="name" id="headings-name">User</span>
+                    </div>
+                </div>
+                <div class="head-displayer">
+                    <div class="total-user">
+                        <span class="card-tag">Total Users</span>
+                        <div class="shower">
+                            <span class="number" id="display-total-users">1000</span>
+                            <span class="icon">
+                                <img src="../web downloads/users-svgrepo-com.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="total-donations">
+                        <span class="card-tag">Total donations</span>
+                        <div class="shower">
+                            <span class="number" id="display-total-donations">1000</span>
+                            <span class="icon">
+                                <img src="../images/money-donation-svgrepo-com.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="total-organizations">
+                        <span class="card-tag">Total Organizations</span>
+                        <div class="shower">
+                            <span class="number" id="display-total-organization">1000</span>
+                            <span class="icon">
+                                <img src="../web downloads/facilities.svg" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="displayer">
+                    <!-- main display -->
+                    <div id="user-head" class="user-head"></div>
+                    <div id="displayer-main" class="displayer-main">
+                    </div>
+                </div>
+                <span class="reciever-main" onclick="orgopen()">Add organization</span>
+                <span class="editor-main" onclick="editoropen()" >Editor</span>
+                <div class="God-mode" id="God-mode">
+                    <span style="display: none;" onclick="editclose()" class="editor-close" id="editor-close">&times;</span>
+                        <h3 class="mode-header">Editor</h3>
+                        <p class="mode-sub">
+                            Here you can delete a user, grant and revoke admin access to any user using their unique id
+                        </p>
+                        <p class="mode-tag">Enter user unique ID</p>
+                        <input id="mode-input" class="mode-input" type="text">
+                        <button id="make-admin" onclick="makeadmin()" class="make-admin">Make admin</button>
+                        <button id="revoke" onclick="revoke()" class="revoke">Revoke</button>
+                        <button id="del-user" onclick="deleteUser()" class="del-user">Delete User</button>
+                        <button id="del-user" onclick="deleteOrg()" class="del-user">Delete Org</button>
+                        <p id="node-error-message" class="node-error-message"></p>
+                </div>
+            </div>
+            
+        </div> 
+        <div id="organization-Modal" class="modal">
+            <!--organization Modal content -->
+            <div class="organization-modal-content">
+              <span onclick="orgclose()" class="organization-close">&times;</span>
+             <div class="organization-container" style="height : 400px; width: 100%">
+                <div class="organization-form">
+                    <form class="organization-main-form">
+                        <p class="mod-head">Get help form</p>
+                        <!-- <img class="image-displayer" id="image-displayer" src="../images/money-donation-svgrepo-com.svg" alt=""> -->
+                        <p class="org-modal-label">Image</p>
+                            <label for="imageUpload" class="org-form-label">Select an image:</label><br>
+                            <input type="file" class="org-form-label" id="imageUpload" name="image" accept="image/*">
+                        <p class="org-modal-label">Name</p>
+                        <input class="org-input" type="text" id="organization-name">
+                        <p class="org-modal-label">Email</p>
+                        <input class="org-input" type="text" id="organization-email">
+                        <p class="org-modal-label">Phone number</p>
+                        <input class="org-input" type="number" id="organization-number">
+                        <p class="org-modal-label">Address</p>
+                        <input class="org-input" type="text" id="organization-address">
+                        <p class="org-modal-label">About</p>
+                        <textarea name="organization-about" class="org-modal-textarea" id="organization-about" cols="30" rows="10"></textarea>
+                    </form>
+                    <span onclick="uploadOrg()" class="organization-actual-btn">Submit!</span>
+                    <p id="organization-error" class="organization-error"></p>
+                    <p id="organization-error2" class="organization-error2">Organization information incomplete</p>
+                </div>
+                 </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- <script src="../js/admin-dash.js"></script> -->
+    <script src="../js/index.js"></script>
+</body>
+</html>
